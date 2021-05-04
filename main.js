@@ -43,8 +43,8 @@ function displayChart() {
       }
 
       // Insert prices
-      let open = parseFloat(monthlyTimeSeries[seriesOfMonth]["1. open"]);
-      let close = parseFloat(monthlyTimeSeries[seriesOfMonth]["4. close"]);
+      let open = parseFloat(monthlyTimeSeries[seriesOfMonth]["1. open"]).toFixed(2);
+      let close = parseFloat(monthlyTimeSeries[seriesOfMonth]["4. close"]).toFixed(2);
 
       if(open < close) {
         openCloseData.push(close.toString());
